@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 import requests
-
+from secret import TOKEN
 def get_repo_tree(repo_url, branch='main'):
     api_url = f"https://api.github.com/repos/{repo_url}/git/trees/{branch}?recursive=1"
 
     headers = {
-        'Authorization': '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'
+        'Authorization': TOKEN
     }
 
     response = requests.get(api_url, headers=headers)
