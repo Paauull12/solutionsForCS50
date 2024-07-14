@@ -1,0 +1,15 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore secret file containing sensitive information
+myApp/secret.py
+
+# Ignore other common sensitive files
+.env
+*.env
+*.secret
+*.key
