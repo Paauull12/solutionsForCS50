@@ -7,9 +7,3 @@ __pycache__/
 
 # Ignore secret file containing sensitive information
 myApp/secret.py
-
-# Ignore other common sensitive files
-.env
-*.env
-*.secret
-*.key

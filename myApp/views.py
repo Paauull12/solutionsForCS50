@@ -6,7 +6,7 @@ def get_repo_tree(repo_url, branch='main'):
     api_url = f"https://api.github.com/repos/{repo_url}/git/trees/{branch}?recursive=1"
 
     headers = {
-        'Authorization': TOKEN
+        'Authorization': f'token {TOKEN}'
     }
 
     response = requests.get(api_url, headers=headers)
