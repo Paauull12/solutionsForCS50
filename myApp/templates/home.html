@@ -198,6 +198,8 @@
         }
 
         function explore(folderName, fileName) {
+            if (fileName.endsWith(".pyc"))
+                return;
             if (fileName.endsWith(".py") || hasValidExtension(fileName)) {
                 fetch(`/get-file-content/?folder_name=${folderName}&file_name=${fileName}`)
                     .then(response => response.text())
