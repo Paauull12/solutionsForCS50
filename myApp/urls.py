@@ -7,4 +7,5 @@ urlpatterns = [
         path('get-file-content/', views.get_file_content, name='get-file-content'),
 
         path('get-folder-details/', views.get_folder_details, name='get_folder_details'),
+        path('credentials/', views.get_credentials, name='get_credentials')
     ]

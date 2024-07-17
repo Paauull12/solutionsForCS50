@@ -72,6 +72,10 @@ def get_file_content(request):
     else:
         return JsonResponse({'error': 'File not found'}, status=404)
 
+
+def get_credentials(request):
+    return render(request, 'credentials.html')
+
 def home(request):
     repo_url = "Paauull12/cs50"
     tree_structure = get_repo_tree(repo_url)
